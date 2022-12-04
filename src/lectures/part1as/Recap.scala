@@ -7,7 +7,7 @@ object Recap extends App {
   val aCondition: Boolean = false
   val aConditionedVal = if (aCondition) 42 else 51
 
-  // instructions vs experssions
+  // instructions vs expressions
 
   //compiler infers types for us
   val aCodeBlock = {

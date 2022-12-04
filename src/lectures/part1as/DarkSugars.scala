@@ -48,12 +48,12 @@ object DarkSugars extends App {
 
   // syntax sugar #3: the :: and #:: methods are special
   val prependedList = 2 :: List(3, 4)
-  // 2.::(List(3, 4)) (no :: method for int so it converts it to below format)
-  // List(3, 4).::(2)
+  // 2.::(List(3, 4)) (there is no :: method for int so it converts it to below format)
+  println(List(3, 4).::(2))
 
   // scala spec: last char decides associativity of method
-  1 :: 2 :: 3 :: List(4, 5) // equivalent to
-  List(4, 5).::(3).::(2).::(1)
+  println(1 :: 2 :: 3 :: List(4, 5)) // equivalent to
+  //println(List(4, 5).::(3).::(2).::(1))
 
   class MyStream[T] {
     def -->:(value: T): MyStream[T] = this // actual implementation here

@@ -14,14 +14,15 @@ object ImplicitsIntro extends App {
 
   println("Peter".greet) //println(fromStringToPerson("Peter").greet)
 
-/*  class A {
-    def greet: Int = 2
-  }
-  implicit def fromStringToA(str: String): A = new A
-  */
+  /*  class A {
+      def greet: Int = 2
+    }
+    implicit def fromStringToA(str: String): A = new A
+    */
 
   // implicit parameters
   def increment(x: Int)(implicit amount: Int) = x + amount
+
   implicit val defaultAmount: Int = 10
   increment(2)
   // implicit is NOT default args

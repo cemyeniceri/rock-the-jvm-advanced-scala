@@ -2,7 +2,8 @@ package lectures.part4implicits
 
 object OrganizingImplicits extends App {
 
-  implicit def reverseOrdering: Ordering[Int] = Ordering.fromLessThan(_ > _) // implicit val reverseOrdering: Ordering[Int] = Ordering.fromLessThan(_ > _)  // : same with this
+  implicit def reverseOrdering: Ordering[Int] = Ordering.fromLessThan(_ > _)
+  // implicit val reverseOrdering: Ordering[Int] = Ordering.fromLessThan(_ > _)  // : same with this
   // implicit val normalOrdering: Ordering[Int] = Ordering.fromLessThan(_ < _)  // if you define second implicit, compiler will crash
   println(List(1, 2, 3, 45, 65, 4).sorted)
 

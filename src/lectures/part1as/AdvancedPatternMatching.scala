@@ -42,7 +42,7 @@ object AdvancedPatternMatching extends App {
 
 
   /* Exercise
-  * - Design below mathPropertyBad without using annoying IFs statement by using elegant pattenr matching which we learnt recently */
+  * - Design below mathPropertyBad without using annoying IFs statement by using elegant pattern matching which we learnt recently */
   val n: Int = 8
   val mathPropertyBad = n match {
     case x if x < 10 => "single digit"
